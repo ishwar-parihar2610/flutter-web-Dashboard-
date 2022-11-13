@@ -3,22 +3,20 @@ import 'package:flutter_web/helpers/local_navigator.dart';
 import 'package:flutter_web/widgets/side_menu.dart';
 import 'package:flutter_web/widgets/side_meu_item.dart';
 import 'package:get/get.dart';
+
 class LargeScreen extends StatelessWidget {
   const LargeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    print("localNavigator() ${localNavigator}");
-
     return Row(
       children: [
-        Expanded(child: SideMenu()
-
-        ),
+        Expanded(child: SideMenu()),
         Expanded(
             flex: 5,
-            child: localNavigator()
-        )
+            child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 16),
+                child: localNavigator()))
       ],
     );
   }

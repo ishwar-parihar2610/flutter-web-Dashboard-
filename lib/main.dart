@@ -24,7 +24,9 @@ class MyApp extends StatelessWidget {
           textTheme:
               GoogleFonts.mulishTextTheme().apply(bodyColor: Colors.black),
           pageTransitionsTheme: PageTransitionsTheme(builders: {
-            TargetPlatform.iOS: FadeUpwardsPageTransitionsBuilder(),
+            TargetPlatform.iOS: FadeUpwardsPageTransitionsBuilder(
+
+            ),
             TargetPlatform.android: FadeUpwardsPageTransitionsBuilder(),
           }),
           primaryColor: Colors.blue),
