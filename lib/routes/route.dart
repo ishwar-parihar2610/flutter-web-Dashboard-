@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_web/pages/authentication/authentication.dart';
 import 'package:flutter_web/pages/client/clients.dart';
 import 'package:flutter_web/pages/drivers/drivers.dart';
 import 'package:flutter_web/pages/overview/overview.dart';

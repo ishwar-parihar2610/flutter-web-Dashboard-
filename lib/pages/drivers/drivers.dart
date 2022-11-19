@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web/pages/drivers/widget/drivers_table.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 
 import '../../constant/controllers.dart';
@@ -22,9 +23,14 @@ class Drivers extends StatelessWidget {
               ),
             )
           ],
-        )
+        ),
 
-        )
+
+
+        ),
+        Expanded(child: ListView(children: const [
+          DriversTable()
+        ],))
       ],
     );
   }
